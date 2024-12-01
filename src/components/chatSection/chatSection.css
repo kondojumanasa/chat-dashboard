@@ -1,0 +1,188 @@
+/* Container for the entire chat interface */
+.chat-container {
+    width: 550px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* Tabs for Conversation and Attachment */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #dad8d8;
+    margin-bottom: 20px;
+    width: 530px;
+    justify-content: space-between;
+   
+
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #1f1e1e;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .tab.active {
+    color: #0F8BFD;
+    width: 50%;
+    border-bottom: 2px solid #0F8BFD;
+  }
+  
+
+
+
+
+
+
+
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 60px;
+    max-height: 300px; /* Set a height limit for the container */
+    overflow-y: auto; /* Enable scrolling for overflow */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+  
+  .messages::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Edge, Safari */
+  }
+  .received .message-content {
+    background-color: rgba(15, 139, 253, 0.03); /* #0F8BFD08 with 10% opacity */
+    border: 1px solid rgba(15, 139, 253, 0.2); /* Border with 20% opacity */
+  }
+  
+  .sent .message-content {
+    background-color: rgba(15, 139, 253, 0.1); /* #0F8BFD08 with higher opacity */
+    border: 1px solid rgba(15, 139, 253, 0.2); /* Border with 20% opacity */
+  }
+  
+  .message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .user-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .sender {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+ 
+   
+  }
+  
+  .time {
+    font-size: 12px;
+    color: #8a8ea6;
+    margin-top: 2px;
+    margin-right: 20px;
+    
+  }
+  
+.status {
+    font-size: 12px;
+    color: #8a8ea6;
+    display: flex;
+    align-items: center;
+  }
+  
+  .check-icon {
+    color: #0F8BFD;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
+  .three-dots {
+    font-size: 18px;
+    color: #8a8ea6;
+    cursor: pointer;
+  }
+  
+  .message-content {
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    max-width: 400px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  
+  .input-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 5px;
+  }
+  
+  .input-field {
+    display: flex;
+  }
+  
+  .input-field input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .send-button {
+    padding: 10px 15px;
+    background-color: #0f8bfd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #0c6fa5;
+  }
+  

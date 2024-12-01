@@ -1,0 +1,43 @@
+.case-favorite {
+    max-width: 400px;
+
+    border-radius: 8px;
+    padding: 16px;
+ 
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.custom-line {
+    border-top:1px solid #44486D1A;
+  
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.card {
+    background-color: #f8f9fa;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.photo-icon {
+    font-size: 1.2rem;
+}

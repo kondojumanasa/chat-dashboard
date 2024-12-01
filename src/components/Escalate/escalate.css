@@ -1,0 +1,84 @@
+/* App.css */
+.escalte-container {
+    display: flex;
+   
+   justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 90%;
+   
+    
+  }
+  
+  .sections {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+  }
+
+  .sections::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .section span {
+    color: #676B89;
+    font-weight: 500;
+
+  }
+  
+  .section.active span {
+    color: #0f8bfd; /* Active section color */
+    font-weight: bold;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  .escalate-btn {
+    background-color: #D74848;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .escalate-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  .sections::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .sections::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+  }
+  
